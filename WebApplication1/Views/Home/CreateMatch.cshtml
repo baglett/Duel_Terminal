@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "CreateMatch";
+}
+<style>
+	.btn-back {
+		font-size: 12px;
+		width: 50px;
+		height: 25px;
+		margin: 0 auto;
+		padding: 0;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+</style>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="jumbotron">
+		<p class="container"><a href='@Url.Action("Index","Home")' class="btn-back btn-primary btn-lg">&laquo; Back</a></p>
+        <h1>Duel Creation</h1>
+        <fieldset>
+            <legend>Duel Mutator</legend>
+            <p>
+                <label>Life Points.......................................</label>
+                <select id="LifePoints">
+                    <option style="display: none;" selected hidden>8000</option>
+                    <option value="1">1000</option>
+                    <option value="2">2000</option>
+                    <option value="3">3000</option>
+                    <option value="4">4000</option>
+                    <option value="5">5000</option>
+                    <option value="6">6000</option>
+                    <option value="7">7000</option>
+                    <option value="8">8000</option>
+                    <option value="9">9000</option>
+                    <option value="10">10000</option>
+                </select>
+            </p>
+            <p>
+                <label>Maximum Number of Turns.................</label>
+                <select id="Turns">
+                    <option style="display: none;" selected hidden>99</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                    <option value="4">40</option>
+                    <option value="5">50</option>
+                    <option value="6">60</option>
+                    <option value="7">70</option>
+                    <option value="8">80</option>
+                    <option value="9">90</option>
+                    <option value="10">99</option>
+                </select>
+            </p>
+            <p>
+                <label>Allow Banned Cards..........................</label>
+                <select id="Banned">
+                    <option style="display: none;" selected hidden>No</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+            </p>
+            <p style="text-align:center"><a style="width:250px" href='@Url.Action("DuelField","Home")' class="btn btn-primary btn-lg">Start Duel &raquo;</a></p>
+        </fieldset>
+    </div>
+</asp:Content>
+

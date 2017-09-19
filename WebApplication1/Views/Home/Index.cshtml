@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<p></p>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="jumbotron">
+        <h1 style="text-align:center">Dueling Terminal</h1>
+
+        <p style="text-align:center"><a style="width:250px" href='@Url.Action("Duel","Home")' class="btn btn-primary btn-lg">Duel &raquo;</a></p>
+        <p style="text-align:center"><a style="width:250px" href='@Url.Action("Search","Home")' class="btn btn-primary btn-lg">Search &raquo;</a></p>
+        <p style="text-align:center"><a style="width:250px" href='@Url.Action("MyCollection","Home")' class="btn btn-primary btn-lg">My Collection &raquo;</a></p>
+        <p style="text-align:center"><a style="width:250px" href='@Url.Action("DeckEditor","Home")' class="btn btn-primary btn-lg">Edit Decks &raquo;</a></p>
+        <p style="text-align:center"><a style="width:250px" href='@Url.Action("MyAccount","Home")' class="btn btn-primary btn-lg">My Account &raquo;</a></p>
+    </div>
+
+</asp:Content>
+   

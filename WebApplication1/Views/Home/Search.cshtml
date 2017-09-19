@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<style>
+	input[type=text] {
+		width: 130px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+
+		/* When the input field gets focus, change its width to 100% */
+		input[type=text]:focus {
+			width: 100%;
+		}
+	.jumbotron{
+		
+	}
+	div.gallery {
+		margin: 5px;
+		border: 1px solid #ccc;
+		float: left;
+		width: 180px;
+	}
+
+		div.gallery:hover {
+			border: 1px solid #777;
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+	.btn-back {
+		font-size: 12px;
+		width: 50px;
+		height: 25px;
+		margin: 0 auto;
+		padding: 0;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+</style>
+
+
+
+<div class="jumbotron container">
+	<p class="container"><a href='@Url.Action("Index","Home")' class="btn-back btn-primary btn-lg">&laquo; Back</a></p>
+
+	<p class="container"><a href='@Url.Action("Test1","Test")' class="btn-back btn-primary btn-lg">&laquo; Test</a></p>
+
+
+	<p class="container">
+		<asp:Button ID="update" runat="server" OnClick="UpdateDataBase" />
+
+		<a href='@Url.Action("UpdateDataBase","Card")' ID="update" class="btn-back btn-primary btn-lg">&laquo; Update Database</a>
+	</p>
+
+
+
+	<h2>Search</h2>
+	<div>
+		<input type="text" name="search" placeholder="Search..">
+	</div>
+	
+	<div>
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+			
+		</div>
+
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+			
+		</div>
+
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+			
+		</div>
+
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+			
+		</div>
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+
+		</div>
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+
+		</div>
+		<div class="gallery">
+			<a>
+				<img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041" width="300" height="200">
+			</a>
+
+		</div>
+	</div>
+</div>
+
+
+

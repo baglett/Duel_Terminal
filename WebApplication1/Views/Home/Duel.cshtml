@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Duel";
+}
+<style>
+
+	.menu-button{
+		text-align:center;
+	}
+	.btn{
+		width:250px;
+	}
+	.container {
+		text-align: left;
+	}
+	.btn-back {
+		font-size: 12px;
+		width: 50px;
+		height: 25px; 
+		margin: 0 auto;
+		padding: 0;
+		display: table-cell;
+		vertical-align:middle;
+		text-align:center;
+		
+	}
+
+
+</style>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron">
+		<p class="container" ><a href='@Url.Action("Index","Home")' class="btn-back btn-primary btn-lg">&laquo; Back</a></p>
+        <h1 style="text-align:center">Dueling Terminal</h1>
+       
+        <p class="menu-button"><a href='@Url.Action("CreateMatch","Home")' class="btn btn-primary btn-lg">Create Match &raquo;</a></p>
+        <p class="menu-button"><a href='@Url.Action("JoinMatch","Home")' class="btn btn-primary btn-lg">Join Match &raquo;</a></p>
+        <p class="menu-button"><a href='@Url.Action("FindFriends","Home")' class="btn btn-primary btn-lg">Find Friends &raquo;</a></p>
+    </div>
+
+</asp:Content>

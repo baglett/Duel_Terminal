@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "DuelField";
+}
+<style>
+    .SpellCardZone {
+        display: inline-block;
+        outline: solid;
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+    }
+
+    .CardStack {
+        display: inline-block;
+        outline: solid;
+        width: 74px;
+        height: 100px;
+        margin: 0px;
+    }
+
+
+    .jumbotron {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .row {
+        font-size: 0px;
+    }
+
+    .ScoreBoard {
+        outline: solid;
+        width: 648px;
+        height: 40px;
+        display: inline-block;
+        font-size: 0;
+    }
+
+    .thumbnail {
+        height: 100px;
+        display: table;
+    }
+
+    .thumbnail img {
+        height: 100%;
+        width: 74%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+</style>
+
+
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="CardStack"></div>
+            <div class="SpellCardZone" ></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="CardStack"></div>
+        </div>
+        <div class="row">
+            <div class="CardStack"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="CardStack"></div>
+        </div>
+        <div class="row">
+            <div class="ScoreBoard">
+            </div>
+        </div>
+        <div class="row">
+            <div class="CardStack"></div>
+			<div class="SpellCardZone"></div>
+			<div class="SpellCardZone"></div>
+            <div class="SpellCardZone">
+                <a href="#" class="thumbnail">
+                    <img src="https://vignette2.wikia.nocookie.net/yugioh/images/d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png/revision/latest?cb=20170330172041">
+                </a>
+            </div>
+            
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="CardStack"></div>
+        </div>
+        <div class="row">
+            <div class="CardStack"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="SpellCardZone"></div>
+            <div class="CardStack"></div>
+        </div>
+        <div title="placeholder" style="width:74px;height:100px">
+
+        </div>
+    </div>
+
+</asp:Content>
