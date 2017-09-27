@@ -52,7 +52,6 @@ namespace DuelTerminal.Models
 		
 			//assign attributes 
 			if (key.Contains("status")){
-				SetS
 				int index = key.IndexOf("status") + 1;
 				this.Status = key[index].ToString();
 			}

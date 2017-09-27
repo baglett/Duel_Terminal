@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using DuelTerminal.Models;
 using System.Data.SqlClient;
-using Excel = Microsoft.Office.Interop.Excel;
+
 
 namespace WebApplication1.Controllers
 {
@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
 
 		public ActionResult UpdateDataBase()
 		{
-			SqlCommand cmd;
+			//SqlCommand cmd;
 			SqlConnection con;
 			//SqlDataAdapter da;
 
@@ -27,18 +27,18 @@ namespace WebApplication1.Controllers
 			con.Open();
 			
 			//access excel sheet of card names 
-			Excel.Application xlApp = new Excel.Application();
-			Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\jaredb\OneDrive\Documents\Duel Terminal Project\yugiohdatabase.xlsx");
-			Excel._Worksheet xlWorksheet = (Excel._Worksheet)xlWorkbook.Sheets[1];
-			Excel.Range xlRange = xlWorksheet.UsedRange;
+			//Excel.Application xlApp = new Excel.Application();
+			//Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\jaredb\OneDrive\Documents\Duel Terminal Project\yugiohdatabase.xlsx");
+			//Excel._Worksheet xlWorksheet = (Excel._Worksheet)xlWorkbook.Sheets[1];
+			//Excel.Range xlRange = xlWorksheet.UsedRange;
 
-			int rowCount = xlRange.Rows.Count;
+			//int rowCount = xlRange.Rows.Count;
 
-			for (int i = 1; i <= rowCount; i++)//for each name in list
+			//for (int i = 1; i <= rowCount; i++)//for each name in list
 			{
 				//if card exists in DB then next card 
 				//else create card with name
-				Card newCard = new Card(xlRange.Cells[1,i].Value.ToString());
+				/*Card newCard = new Card(xlRange.Cells[1,i].Value.ToString());
 				Console.Write(newCard.Name);
 				Console.Write(newCard.Status);
 				Console.Write(newCard.Text);
@@ -62,9 +62,9 @@ namespace WebApplication1.Controllers
 				cmd.Parameters.AddWithValue("@Image", newCard.Image);
 				cmd.Parameters.AddWithValue("@Image_Url", newCard.ImageUrl);
 				cmd.ExecuteNonQuery();
-			}
-		
-
+			
+		*/
+}
 
 			return View();
 		}
